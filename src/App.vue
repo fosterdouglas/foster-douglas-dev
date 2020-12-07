@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    i love transistor
     <GameCard />
   </div>
 </template>
