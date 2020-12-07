@@ -1,3 +1,4 @@
 module.exports = {
-  outputDir: "./docs/"
+  outputDir: "dist",
+  publicPath: "/indie-crusade/dist"
 };
