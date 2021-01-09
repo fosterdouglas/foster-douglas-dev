@@ -7,7 +7,7 @@
         </b-col>
       </b-row>
       <b-row no-gutters>
-        <ProjectCard v-for="project in 6" :key="project" />
+        <ProjectCard :description="'1000 Daily Game Designs'" />
       </b-row>
     </b-container>
   </div>
@@ -19,8 +19,8 @@ import ProjectCard from "./components/ProjectCard.vue";
 
 @Component({
   components: {
-    ProjectCard
-  }
+    ProjectCard,
+  },
 })
 export default class App extends Vue {}
 </script>
