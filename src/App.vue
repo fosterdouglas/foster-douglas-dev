@@ -1,15 +1,49 @@
 <template>
   <div id="app">
     <b-container fluid>
-      <b-row no-gutters>
+      <b-row class="mb-3" no-gutters>
         <b-col class="pt-3 text-center">
           <h4 class="bold grey">Foster Douglas</h4>
+          <span
+            ><a
+              style="color: #333 !important;"
+              href="mailto:foster@sandcastle.co"
+              >Contact</a
+            ></span
+          >
+          &nbsp; /
+          <span
+            ><a
+              href="https://twitter.com/_fosterdouglas"
+              target="_blank"
+              style="color: #333 !important;"
+              >Twitter</a
+            ></span
+          >
         </b-col>
       </b-row>
-      <b-row no-gutters>
-        <ProjectCard :description="'1000 Daily Game Designs'" />
+
+      <h4 class="px-5 mb-3 py-2 bold grey bg-light">Games</h4>
+      <b-row class="px-4" no-gutters>
+        <ProjectCard
+          :name="'1000 Daily Game Designs'"
+          :link="'https://dailygamedesigns.com/'"
+          :description="
+            '3 years straight of personal daily game design thoughts and posts.'
+          "
+        />
+        <ProjectCard
+          :name="'satellite in f# minor'"
+          :link="'https://globalgamejam.org/2021/games/satellite-1'"
+          :description="
+            'Explore a quiet galaxy in search of lost fragments from long-past humanity. Made for Global Game Jam 2021.'
+          "
+        />
       </b-row>
     </b-container>
+    <div class="position-absolute text-center w-100 grey" style="bottom: 30px">
+      Under construction! - Feb 19th 2021
+    </div>
   </div>
 </template>
 
@@ -19,8 +53,8 @@ import ProjectCard from "./components/ProjectCard.vue";
 
 @Component({
   components: {
-    ProjectCard,
-  },
+    ProjectCard
+  }
 })
 export default class App extends Vue {}
 </script>
