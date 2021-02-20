@@ -1,16 +1,22 @@
 <template>
-  <b-col cols="12" md="6" xl="4" class="my-3">
-    <div
-      class="p-3 text-center mx-auto shadow-sm projectCard h-100 "
-      style="width:95%; display: grid;"
+  <b-col cols="12" md="6" xl="4" class="my-3 projectContainer p-3">
+    <a
+      :href="link"
+      target="_blank"
+      class="text-decoration-none text-dark projectAnchor"
     >
-      <img v-if="img" class="" :src="img" width="100%" />
+      <img
+        v-if="img"
+        :src="require(`@/assets/images/` + img)"
+        class="p-3 text-center mx-auto projectCard"
+        style="display: grid; height: 10rem;"
+      />
 
-      <a :href="link" target="_blank">
-        <h5 class="mt-1">{{ name }}</h5>
-      </a>
-      <div class="mx-auto" style="max-width: 30ch;">{{ description }}</div>
-    </div>
+      <h5 class="text-center mt-3  bold">{{ name }}</h5>
+      <div class="mx-auto text-center" style="max-width: 31ch;">
+        {{ description }}
+      </div>
+    </a>
   </b-col>
 </template>
 
@@ -27,12 +33,33 @@ export default class ProjectCard extends Vue {
 </script>
 
 <style scoped lang="scss">
-a {
-  color: #dc3545 !important;
+.projectContainer {
+}
+
+.projectAnchor {
+  &:hover {
+    .projectCard {
+      border: 0.5px solid #555;
+      border-radius: 2rem;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+      transition: border-color 0.6s, box-shadow 0.2s, border-radius 0.4s;
+      //transition-timing-function: ease-in;
+    }
+  }
 }
 
 .projectCard {
-  border-radius: 50rem;
+  transition: border-color 2s, box-shadow 2s, border-radius 3s;
+  transition-timing-function: ease-out;
+  border-radius: 6rem;
   border: 0.5px solid #ddd;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  background: white;
+
+  &:hover {
+    //border: 0.5px solid #555;
+    //box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    // @extend .shadow-lg;
+  }
 }
 </style>
