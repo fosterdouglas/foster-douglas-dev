@@ -1,10 +1,6 @@
 <template>
   <b-col cols="12" md="6" xl="4" class="my-3 projectContainer p-3">
-    <a
-      :href="link"
-      target="_blank"
-      class="text-decoration-none text-dark projectAnchor"
-    >
+    <a :href="link" :target="target" class="text-decoration-none projectAnchor">
       <img
         v-if="img"
         :src="require(`@/assets/images/` + img)"
@@ -12,8 +8,10 @@
         style="display: grid; height: 10rem;"
       />
 
-      <h5 class="text-center mt-3  bold">{{ name }}</h5>
-      <div class="mx-auto text-center" style="max-width: 31ch;">
+      <slot v-if="override" name="visual"></slot>
+
+      <h4 class="text-center mt-3 bold">{{ name }}</h4>
+      <div class="mx-auto text-center" style="max-width: 29ch;">
         {{ description }}
       </div>
     </a>
@@ -29,6 +27,8 @@ export default class ProjectCard extends Vue {
   @Prop() private name!: string;
   @Prop() private link!: string;
   @Prop() private description!: string;
+  @Prop() private target!: string;
+  @Prop() private override!: boolean;
 }
 </script>
 
@@ -37,6 +37,8 @@ export default class ProjectCard extends Vue {
 }
 
 .projectAnchor {
+  color: #111;
+
   &:hover {
     .projectCard {
       border: 0.5px solid #555;
@@ -55,11 +57,5 @@ export default class ProjectCard extends Vue {
   border: 0.5px solid #ddd;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
   background: white;
-
-  &:hover {
-    //border: 0.5px solid #555;
-    //box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-    // @extend .shadow-lg;
-  }
 }
 </style>

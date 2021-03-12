@@ -1,8 +1,16 @@
 <template>
   <div id="app">
     <b-container fluid>
-      <b-row class="mb-3" no-gutters>
-        <b-col class="pt-3 text-center">
+      <b-row class="mb-5 mt-3" no-gutters>
+        <b-col cols="1" class="pl-4" v-if="$route.name !== 'gallery'"
+          ><router-link tag="div" :to="{ name: 'gallery' }"
+            ><span
+              class="supportFont back large"
+              v-html="'<'"
+            ></span></router-link
+        ></b-col>
+
+        <b-col class="text-center">
           <div class="highlightFont large mb-4 mb-md-2">Foster Douglas</div>
           <!-- <span
             ><a
@@ -21,74 +29,20 @@
             ></span
           > -->
         </b-col>
+        <b-col cols="1" v-if="$route.name !== 'gallery'"></b-col>
       </b-row>
 
-      <GroupTitle :title="'games'" />
-
-      <b-row class="px-4 mb-5" no-gutters>
-        <ProjectCard
-          :img="'project-dgd.png'"
-          :name="'1000 Daily Game Designs'"
-          :link="'https://dailygamedesigns.com/'"
-          :description="
-            '34 consecutive months of personal daily game design thoughts and postings. Active between 2015 and 2017.'
-          "
-        />
-        <ProjectCard
-          :img="'project-satellite.png'"
-          :name="'satellite in f# minor'"
-          :link="'https://globalgamejam.org/2021/games/satellite-1'"
-          :description="
-            'Explore a quiet galaxy in search of lost fragments from long-past humanity. Made for Global Game Jam 2021.'
-          "
-        />
-        <ProjectCard
-          :img="'project-placeholder.png'"
-          :name="'Everyday Lemonade Games'"
-          :link="'https://twitter.com/Everyday_Lemons'"
-          :description="
-            'Some people making some refreshingly tangy games for Playdate someday. Currently dabbling in game jams.'
-          "
-        />
-        <ProjectCard
-          :img="'project-fuzz.png'"
-          :name="'Fuzz'"
-          :link="'https://everydaylemonade.itch.io/fuzz'"
-          :description="
-            'Adventure into the life of a tiny Fuzz. First game project, from early 2014. Pointlessly remade in 2020.'
-          "
-        />
-      </b-row>
-
-      <GroupTitle :title="'design'" />
-
-      <b-row class="px-4 mb-5" no-gutters>
-        <ProjectCard
-          :img="'project-placeholder.png'"
-          :name="'Sandcastle Co'"
-          :link="'http://sandcastle.co'"
-          :description="
-            'Freelance design, founded in 2015. Focuses on web and community services.'
-          "
-        />
-      </b-row>
-
-      <GroupTitle :title="'coffee'" />
-
-      <b-row class="px-4 mb-5" no-gutters>
-        <ProjectCard
-          :img="'project-placeholder.png'"
-          :name="'Cura Coffeehouse'"
-          :link="'https://www.instagram.com/curacoffeehouse/'"
-          :description="
-            'Designed and built as the first specialty coffee house in Green Bay, Wisconsin. Operated from 2017 to 2020.'
-          "
-        />
-      </b-row>
+      <router-view></router-view>
     </b-container>
-    <!-- <div class="position-absolute text-center w-100 grey" style="bottom: 30px">
-      Under construction! - Feb 19th 2021
-    </div> -->
+    <div class=" text-center w-100 grey mb-3 small" style="bottom: 50px">
+      Made with love (and
+      <a
+        class="footer text-decoration-none"
+        href="https://vuejs.org/"
+        target="_blank"
+        >Vue.js</a
+      >) by me! ©2021
+    </div>
   </div>
 </template>
 
@@ -96,11 +50,13 @@
 import { Component, Vue } from "vue-property-decorator";
 import ProjectCard from "./components/ProjectCard.vue";
 import GroupTitle from "./components/GroupTitle.vue";
+import Gallery from "./components/Gallery.vue";
 
 @Component({
   components: {
     ProjectCard,
-    GroupTitle
+    GroupTitle,
+    Gallery
   }
 })
 export default class App extends Vue {}
@@ -116,7 +72,9 @@ body {
 }
 
 #app {
-  font-family: "bitter", Helvetica, Arial, sans-serif;
+  font-family: "serenity", Helvetica, Arial, sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.4;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -132,6 +90,19 @@ body {
   font-weight: 700;
   font-style: normal;
   //color: #ff4e86;
+}
+
+.back {
+  color: cadetblue;
+
+  &:hover {
+    cursor: pointer;
+    color: #212529;
+  }
+}
+
+.footer {
+  color: cadetblue;
 }
 
 .large {
