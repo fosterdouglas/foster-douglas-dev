@@ -5,7 +5,7 @@
         v-if="img"
         :src="require(`@/assets/images/` + img)"
         class="p-3 text-center mx-auto projectCard"
-        style="display: grid; height: 10rem;"
+        style="display: grid; height: 10rem; width: 10rem;"
       />
 
       <slot v-if="override" name="visual"></slot>

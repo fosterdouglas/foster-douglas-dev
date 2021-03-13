@@ -14,6 +14,10 @@ echo 'www.foster-douglas.com' > CNAME
 
 git init
 git add -A
+
+# rename index to deal with Vue Router / history mode / GitHub Pages etc
+git mv index.html 404.html
+
 git commit -m 'deploy'
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>

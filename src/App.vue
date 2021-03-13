@@ -2,13 +2,11 @@
   <div id="app">
     <b-container fluid>
       <b-row class="mb-5 mt-3" no-gutters>
-        <b-col cols="1" class="pl-4" v-if="$route.name !== 'gallery'"
-          ><router-link tag="div" :to="{ name: 'gallery' }"
-            ><span
-              class="supportFont back large"
-              v-html="'<'"
-            ></span></router-link
-        ></b-col>
+        <b-col cols="1" class="pl-4" v-if="$route.name !== 'gallery'">
+          <router-link tag="div" :to="{ name: 'gallery' }"
+            ><span class="supportFont back large" v-html="'<'"></span>
+          </router-link>
+        </b-col>
 
         <b-col class="text-center">
           <div class="highlightFont large mb-4 mb-md-2">Foster Douglas</div>
@@ -34,13 +32,13 @@
 
       <router-view></router-view>
     </b-container>
-    <div class=" text-center w-100 grey mb-3 small" style="bottom: 50px">
+    <div class=" text-center w-100 grey mb-3 small mt-5" style="bottom: 50px">
       Made with love (and
       <a
         class="footer text-decoration-none"
         href="https://vuejs.org/"
         target="_blank"
-        >Vue.js</a
+        >vue.js</a
       >) by me! ©2021
     </div>
   </div>

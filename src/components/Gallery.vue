@@ -29,21 +29,21 @@
         />
       </router-link>
       <ProjectCard
-        :img="'project-satellite.png'"
-        :name="'satellite in f# minor'"
-        :link="'https://globalgamejam.org/2021/games/satellite-1'"
+        :img="'project-itch.png'"
+        :name="'itch.io Experiments + Game Jams'"
+        :link="'https://everydaylemonade.itch.io/'"
         :target="'_blank'"
         :description="
-          'Explore a quiet galaxy in search of lost fragments from long-past humanity. Made for Global Game Jam 2021.'
+          'Some interactive + silly + weird + serious game jams and experiments, many made quickly and with specific themes.'
         "
       />
       <ProjectCard
-        :img="'project-placeholder.png'"
+        :img="'project-everyday.png'"
         :name="'Everyday Lemonade Games'"
         :link="'https://twitter.com/Everyday_Lemons'"
         :target="'_blank'"
         :description="
-          'Some people making some refreshingly tangy games for Playdate someday. Currently dabbling in game jams.'
+          'Some humans making refreshingly tangy experiences for the upcoming Playdate. Currently dabbling in game jams.'
         "
       />
       <ProjectCard
