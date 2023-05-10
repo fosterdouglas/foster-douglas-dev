@@ -1,0 +1,70 @@
+// This is not yet ideal, but fixes for now not needing to import the Bootstrap script in app.vue
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Functions (to manipulate colors, SVGs, calc, etc)
+// @import "../node_modules/bootstrap/scss/functions";
+
+// Custom variables
+// @import "~/assets/styles/variables.scss";
+
+// Required Bootstrap stylesheets
+// @import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/functions";
+
+// Custom colors
+// @import "~/assets/styles/colors.scss";
+
+// Default map overrides
+// $custom-theme-colors:(
+//     "primary": $coal,
+//     "secondary": $iron,
+//     "disco": $disco,
+//     "plum": $plum,
+//     "golden": $golden,
+//     "ocean": $ocean,
+//     "money": $money,
+//     "coal": $coal,
+//     "spark": $spark,
+//     "pool": $pool,
+//     "moss": $moss,
+//     "iron": $iron,
+//     "fog": $fog,
+//     "snow": $snow,
+// );
+
+// $theme-colors: map-merge($theme-colors, $custom-theme-colors);
+
+// Unconfirmed that these are functioning properly
+$theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
+$utilities-colors: map-merge($utilities-colors, $theme-colors-rgb);
+$utilities-text: map-merge($utilities-text, $utilities-colors);
+$utilities-text-colors: map-loop($utilities-text, rgba-css-var, "$key", "text");
+$utilities-bg: map-merge($utilities-bg, $utilities-colors);
+$utilities-bg-colors: map-loop($utilities-bg, rgba-css-var, "$key", "bg");
+
+// Add classes bg-X, text-X, border-X for custom colors
+@each $color, $value in $theme-colors {
+    .bg-#{$color} {
+      background-color: $value !important;
+    }
+    .text-#{$color} {
+      color: $value !important;
+    }  
+    .border-#{$color} {
+      border-color: $value !important;
+    }
+    .alert-#{$color} {
+      --bs-alert-color: #{shift-color($value, $alert-color-scale)};
+      --bs-alert-bg: #{shift-color($value, $alert-bg-scale)} ;
+      --bs-alert-border-color: #{shift-color($value, $alert-border-scale)};
+    }  
+}
+
+// Remaining required parts
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/root";
+
+// Global styles
+// @import "~/assets/styles/global.scss";
