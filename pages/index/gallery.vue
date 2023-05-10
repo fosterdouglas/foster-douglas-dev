@@ -1,3 +1,0 @@
-<template>
-  <Gallery />
-</template>

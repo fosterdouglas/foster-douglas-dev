@@ -7,8 +7,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "deploy": "sh deploy.sh",
-    "gh-delpy": "gh-pages -d .output/public -t true"
+    "deploy": "node deploy.ts"
   },
   "devDependencies": {
     "@types/node": "^18",

@@ -2,7 +2,7 @@
   <main>
     <div id="app" class="container-fluid shadow-sm position-relative mb-5">
       <div class="row mb-5 header g-0">
-        <div class="col-1" v-if="$route.name !== 'index-gallery'">
+        <div class="col-1" v-if="$route.name !== 'index'">
           <NuxtLink class="text-decoration-none" tag="div" :to="'/'">
             <span class="supportFont back large" v-html="'<'"></span>
           </NuxtLink>
@@ -23,6 +23,7 @@
         </div>
       </div>
 
+      <Gallery v-if="$route.name === 'index'" />
       <NuxtPage />
 
       <div class="text-center w-100 pb-1 mt-5 writingFont" style="bottom: 50px">
@@ -51,7 +52,7 @@
   <div
     class="position-absolute"
     style="left: calc(50vw - 25px)"
-    v-if="$route.name !== 'index-gallery'"
+    v-if="$route.name !== 'index'"
   >
     <NuxtLink class="text-decoration-none" tag="div" :to="'/'">
       <span class="supportFont back large" v-html="'<'"></span>
@@ -60,21 +61,7 @@
 </template>
 
 <script setup lang="ts">
-// VARS //
-const route = useRoute();
-
-// HOOKS //
-onMounted(() => {
-  if (route.name === "index") {
-    navigateTo("/gallery");
-  }
-});
-
-onUpdated(() => {
-  if (route.name === "index") {
-    navigateTo("/gallery");
-  }
-});
+//
 </script>
 
 <style lang="scss">
