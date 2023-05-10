@@ -92,3 +92,5 @@ typings/
 .nova/
 
 .DS_Store
+
+.output/
