@@ -1,5 +1,5 @@
 <template>
-  <div class="row no-gutters">
+  <div ref="gomy2021" class="row no-gutters">
     <div class="col-sm-2"></div>
     <div class="col-12 col-sm-7 col-lg-6">
       <h1 class="mb-4">
@@ -618,6 +618,15 @@
     <div class="col-md-auto"></div>
   </div>
 </template>
+
+<script setup lang="ts">
+// VARS //
+const gomy2021 = ref(null);
+
+onMounted(() => {
+  gomy2021.value.scrollIntoView();
+});
+</script>
 
 <style scoped lang="scss">
 img {

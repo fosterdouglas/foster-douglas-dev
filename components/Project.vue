@@ -1,5 +1,5 @@
 <template>
-  <div class="col-12 col-md-6 col-xl-4 my-3 p-2">
+  <div class="col-12 col-sm-6 col-xl-4 my-3 p-2 user-select-none">
     <a :href="link" :target="target" class="text-decoration-none projectAnchor">
       <img
         v-if="img"

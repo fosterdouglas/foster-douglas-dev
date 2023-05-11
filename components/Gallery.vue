@@ -8,7 +8,7 @@
         :name="'SurgeROI'"
         :link="'https://surgeroi.io'"
         :target="'_blank'"
-        :description="'Founding partner – product & UX design, frontend development, graphic design, & branding.'"
+        :description="'Founding Partner – product & UX design, software development, graphic design, & branding.'"
       />
       <Project
         :img="'project-sandcastle.jpg'"
@@ -22,7 +22,7 @@
         :name="'E-By Design'"
         :link="'https://e-bydesign.ca'"
         :target="'_blank'"
-        :description="'Freelance collaboration – UI design, UX research, product design, and frontend development.'"
+        :description="'Freelance collaboration – UI design, UX research, product design, and front end software development.'"
       />
     </div>
 
@@ -57,7 +57,7 @@
         :name="'Bíotopíco'"
         :link="'https://everydaylemonade.itch.io/biotopico'"
         :target="'_blank'"
-        :description="'Mindfulness game, breathe & plant real trees – Silver award ($10,000) for DeepWell Mental Health jam.'"
+        :description="'Mindfulness game, breathe & plant real trees – Silver award ($10k) for DeepWell Mental Health competition.'"
       />
       <Project
         :img="'project-everyday.png'"
@@ -69,7 +69,7 @@
           <span
             >Refreshingly tangy experiences – focused on tiny Playdate games.
             <button
-              class="back border-0 bg-transparent p-0"
+              class="link border-0 bg-transparent p-0"
               target="'_blank'"
               href="https://twitter.com/Everyday_Lemons"
             >
@@ -90,7 +90,7 @@
         :name="'Fuzz'"
         :link="'https://everydaylemonade.itch.io/fuzz'"
         :target="'_blank'"
-        :description="'Adventure into the life of a tiny Fuzz ball – first game project, made in  2014; pointless iOS remake in 2020.'"
+        :description="'Adventure into the life of a tiny Fuzz ball – first game project, made in  2014; remade for iOS in 2020.'"
       />
     </div>
 
@@ -121,7 +121,12 @@
         :name="'Quarter Clock'"
         :link="'https://github.com/fosterdouglas/quarter-clock'"
         :target="'_blank'"
-        :description="'First maker project – unique redesign for a simple digital clock + learn Python & Raspberry Pi Pico.'"
+        :description="'First Maker project – unique redesign for a simple digital clock using custom Python code & a Raspberry Pi Pico.'"
+      />
+      <Project
+        :img="'project-enchantress.png'"
+        :name="'Enchantress'"
+        :description="'Music, sound design, & foley – independent animation collaboration finished in 2023.'"
       />
     </div>
 
@@ -134,21 +139,21 @@
 
     <div v-if="archiveShowing" class="row px-4 mb-5">
       <Project
-        :img="'project-gamelife.png'"
-        :name="'Game/Life (Soon)'"
-        :description="'Recent game design thoughts, gameplay statistics, discussion, and other personal analysis on interactivity.'"
-      />
-      <Project
-        :img="'project-placeholder.png'"
-        :name="'Crusade (Soon)'"
-        :description="'Discourse on indie game design and what I think defines the term &quot;Indie.&quot; Micro reviews under 2 minutes each.'"
-      />
-      <Project
         :img="'project-gomy2021.png'"
         :name="'GOMY 2021'"
         :description="'Games of my year; blurbs on some 2021 experiences, including notable indies, co-op, and most addicting.'"
         type="button"
-        @click="navigateTo('gomy2021')"
+        @click="navigateTo('gomy-2021')"
+      />
+      <Project
+        :img="'project-placeholder.png'"
+        :name="'Game/Life (WIP)'"
+        :description="'Recent game design thoughts, statistics tracking, discussion, and other personal analysis on interactivity.'"
+      />
+      <Project
+        :img="'project-placeholder.png'"
+        :name="'Crusade (WIP)'"
+        :description="'Video discourse on indie game design discussing the &quot;Indie games&quot; concept; 2 minute micro-reviews.'"
       />
     </div>
   </div>

@@ -2,11 +2,11 @@
   <div :id="title" class="container-fluid">
     <div class="row text-start g-0" :class="color ? 'hoverColor' : ''">
       <div class="col-auto pt-md-2">
-        <span class="max highlightFont slash">/ </span>
+        <span class="max highlightFont slash user-select-none">/ </span>
       </div>
       <div class="col-6 col-lg-auto">
         <span
-          class="supportFont large pe-0 pe-md-5"
+          class="supportFont large pe-0 pe-md-5 user-select-none"
           :class="color ? `text-${color}` : ''"
           >{{ title }}</span
         >

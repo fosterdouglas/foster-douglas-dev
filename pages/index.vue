@@ -1,51 +1,36 @@
 <template>
   <main>
     <div id="app" class="container-fluid shadow-sm position-relative mb-5">
-      <div class="row mb-5 header g-0">
+      <div class="row mb-5 header g-0 justify-content-between">
         <div class="col-1" v-if="$route.name !== 'index'">
           <NuxtLink class="text-decoration-none" tag="div" :to="'/'">
-            <span class="supportFont back large" v-html="'<'"></span>
+            <span class="supportFont link large" v-html="'<'"></span>
           </NuxtLink>
         </div>
-        <div v-else class="col-1"></div>
+        <!-- Bio for larger screens -->
+        <template v-else>
+          <div class="d-none d-md-block col">
+            <Bio />
+          </div>
 
-        <div class="col-auto ms-auto g-0">
-          <span class="name">
-            <div class="col-auto ms-auto">
-              <div class="large nameText text-end ps-5 pe-sm-2 pe-md-0">
-                Foster
-              </div>
-            </div>
-            <div class="col-auto ms-auto ms-lg-0">
-              <div class="large nameText ps-md-4 text-end">Douglas</div>
-            </div>
-          </span>
+          <div class="col-auto col-md-0"></div>
+        </template>
+
+        <div class="col-auto g-0 user-select-none">
+          <Name />
+        </div>
+
+        <!-- Bio for smaller screens -->
+        <div class="ms-auto col-10 d-md-none text-end mt-2">
+          <Bio />
         </div>
       </div>
 
       <Gallery v-if="$route.name === 'index'" />
       <NuxtPage />
 
-      <div class="text-center w-100 pb-1 mt-5 writingFont" style="bottom: 50px">
-        Made with love (and Nuxt3) by me! ©2023
-        <br />
-        <a
-          class="back"
-          href="https://twitter.com/_fosterdouglas"
-          target="_blank"
-          >twitter
-        </a>
-        /
-        <a class="back" href="https://sandcastle.co" target="_blank"
-          >sandcastle.co
-        </a>
-        /
-        <a
-          class="back"
-          href="https://www.linkedin.com/in/foster-douglas/"
-          target="_blank"
-          >linkedin
-        </a>
+      <div class="pb-1 mt-5">
+        <Footer />
       </div>
     </div>
   </main>
@@ -55,7 +40,7 @@
     v-if="$route.name !== 'index'"
   >
     <NuxtLink class="text-decoration-none" tag="div" :to="'/'">
-      <span class="supportFont back large" v-html="'<'"></span>
+      <span class="supportFont link large" v-html="'<'"></span>
     </NuxtLink>
   </div>
 </template>
@@ -126,7 +111,7 @@ hr {
 }
 
 //rename this
-.back {
+.link {
   color: cadetblue;
   font-weight: 500;
 
@@ -139,23 +124,6 @@ hr {
 .header {
   font-family: rig-solid-bold-halftone, sans-serif;
   font-weight: 100;
-
-  .name:hover {
-    .nameText {
-      background-size: 200%;
-      background-image: linear-gradient(45deg, cadetblue, #1c97ca);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      cursor: pointer;
-      font-family: rig-solid-bold-reverse, sans-serif;
-      //transition: background-size 0.7s ease-in-out;
-    }
-  }
-}
-
-.footer {
-  color: cadetblue;
 }
 
 .large {
@@ -172,36 +140,21 @@ hr {
 .max {
   font-size: 5.5rem !important;
   line-height: 0;
-  //vertical-align: sub;
 
   @media (min-width: 768px) {
     font-size: 8rem !important;
   }
 }
 
-//BOOTSTRAP OVERRIDES
-$white: #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #6c757d !default;
-$gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
-$black: #000 !default;
-
 .container-fluid {
   padding: 0 !important;
 }
 
-//STYLES
 .bold {
   font-weight: 700;
 }
 
 .grey {
-  color: $gray-700;
+  color: #495057;
 }
 </style>
