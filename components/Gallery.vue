@@ -2,7 +2,7 @@
   <div class="container-fluid">
     <GroupTitle :title="'design'" />
 
-    <div class="row px-4 mb-5">
+    <div class="row px-4 py-4 mb-5">
       <Project
         :img="'project-surgeroi.png'"
         :name="'SurgeROI'"
@@ -28,7 +28,7 @@
 
     <GroupTitle :title="'game'" />
 
-    <div class="row px-4 mb-5">
+    <div class="row px-4 py-4 mb-5">
       <!-- <Project
         :img="'project-gamelife.png'"
         :name="'Game/Life'"
@@ -96,7 +96,7 @@
 
     <GroupTitle :title="'coffee'" />
 
-    <div class="row px-4 mb-5">
+    <div class="row px-4 py-4 mb-5">
       <Project
         :img="'project-cura.png'"
         :name="'Cura Coffeehouse'"
@@ -115,7 +115,7 @@
 
     <GroupTitle :title="'making'" />
 
-    <div class="row px-4 mb-5">
+    <div class="row px-4 py-4 mb-5">
       <Project
         :img="'project-quarterclock.png'"
         :name="'Quarter Clock'"
@@ -137,7 +137,7 @@
       @click="archiveShowing = !archiveShowing"
     />
 
-    <div v-if="archiveShowing" class="row px-4 mb-5">
+    <div v-if="archiveShowing" class="row px-4 py-4 mb-5">
       <Project
         :img="'project-gomy2021.png'"
         :name="'GOMY 2021'"

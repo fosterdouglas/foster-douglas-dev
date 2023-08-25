@@ -18,9 +18,13 @@
     >
     /
     <a v-if="!emailShowing" class="link" @click="emailShowing = !emailShowing"
-      >email
-    </a>
+      >email</a
+    >
     <span v-else>foster@sandcastle.co</span>
+    /
+    <a class="link" target="_blank" href="./files/foster-douglas-resume.pdf"
+      >cv</a
+    >
   </div>
 </template>
 

@@ -4,12 +4,12 @@
       <img
         v-if="img"
         :src="`./images/` + img"
-        class="p-3 text-center mx-auto projectCard"
+        class="p-3 me-auto projectCard"
         style="display: grid; height: 10rem; width: 10rem"
       />
 
-      <h4 class="text-center mt-3 bold">{{ name }}</h4>
-      <div class="mx-auto text-center" style="max-width: 29ch">
+      <h4 class="mt-3 bold">{{ name }}</h4>
+      <div style="max-width: 29ch">
         {{ description }}
 
         <slot name="visual" />
