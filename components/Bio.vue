@@ -2,8 +2,8 @@
   <div class="writingFont d-flex flex-column">
     <div class="d-flex justify-content-md-start justify-content-end">
       <span>
-        Digital creative <span class="sep">/</span> designer
-        <span class="sep">/</span> unexpected developer
+        digital creative <span class="sep">/</span> designer
+        <span class="sep">/</span> writer <span class="sep">/</span> developer
         <span class="sep">/</span>
       </span>
     </div>
@@ -16,7 +16,7 @@
     </div>
 
     <div class="d-flex justify-content-md-start justify-content-end pt-2">
-      Oakland, California
+      in Oakland, California
     </div>
   </div>
 </template>

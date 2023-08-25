@@ -26,7 +26,17 @@
       />
     </div>
 
-    <GroupTitle :title="'game'" />
+    <GroupTitle :title="'write'" />
+
+    <div class="row px-4 py-4 mb-5">
+      <Project
+        :img="'project-placeholder.png'"
+        :name="'The Chameleon & The Rainbow-Shell Turtle'"
+        :description="'Children\'s book on the adventures of looking inward, learning to Love, and asking forgiveness – written in 2023.'"
+      />
+    </div>
+
+    <GroupTitle :title="'play'" />
 
     <div class="row px-4 py-4 mb-5">
       <!-- <Project
@@ -94,7 +104,7 @@
       />
     </div>
 
-    <GroupTitle :title="'coffee'" />
+    <GroupTitle :title="'give'" />
 
     <div class="row px-4 py-4 mb-5">
       <Project
@@ -113,20 +123,22 @@
       />
     </div>
 
-    <GroupTitle :title="'making'" />
+    <GroupTitle :title="'make'" />
 
     <div class="row px-4 py-4 mb-5">
+      <Project
+        :img="'project-enchantress.png'"
+        :name="'Enchantress'"
+        :link="'https://vimeo.com/857298204'"
+        :target="'_blank'"
+        :description="'Music, sound design, & foley – independent animation collaboration finished in August 2023.'"
+      />
       <Project
         :img="'project-quarterclock.png'"
         :name="'Quarter Clock'"
         :link="'https://github.com/fosterdouglas/quarter-clock'"
         :target="'_blank'"
         :description="'First Maker project – unique redesign for a simple digital clock using custom Python code & a Raspberry Pi Pico.'"
-      />
-      <Project
-        :img="'project-enchantress.png'"
-        :name="'Enchantress'"
-        :description="'Music, sound design, & foley – independent animation collaboration finished in 2023.'"
       />
     </div>
 
