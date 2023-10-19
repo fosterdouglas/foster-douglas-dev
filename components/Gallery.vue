@@ -32,7 +32,7 @@
       <Project
         :img="'project-placeholder.png'"
         :name="'The Chameleon & The Rainbow-Shell Turtle'"
-        :description="'Children\'s story on the adventures of looking inward, learning to Love, and asking forgiveness – written in 2023.'"
+        :description="'Children\'s story on the adventures of looking inward, learning to Love, and finding forgiveness – written in 2023.'"
         :link="'http://chameleon-and-turtle.com'"
         :target="'_blank'"
       />
