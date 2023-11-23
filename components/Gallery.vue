@@ -8,7 +8,7 @@
         :name="'SurgeROI'"
         :link="'https://surgeroi.io'"
         :target="'_blank'"
-        :description="'Founding Partner – product & UX design, software development, graphic design, & branding.'"
+        :description="'Co-founder and Design Director – product, UX design, software development, design, & branding.'"
       />
       <Project
         :img="'project-sandcastle.jpg'"
@@ -31,8 +31,8 @@
     <div class="row px-4 py-4 mb-5">
       <Project
         :img="'project-placeholder.png'"
-        :name="'The Chameleon & The Rainbow-Shell Turtle'"
-        :description="'Children\'s story on the adventures of looking inward, learning to Love, and finding forgiveness – written in 2023.'"
+        :name="'House in the Trees'"
+        :description="'Children\'s novel on the adventures of looking inward, learning to Love, and letting go – written in 2023.'"
         :link="'http://chameleon-and-turtle.com'"
         :target="'_blank'"
       />
