@@ -2,21 +2,25 @@
   <div class="writingFont d-flex flex-column">
     <div class="d-flex justify-content-md-start justify-content-end">
       <span>
-        digital creative <span class="sep">/</span> designer
-        <span class="sep">/</span> writer <span class="sep">/</span> developer
-        <span class="sep">/</span>
+        creative <span class="sep">/</span> designer
+        <span class="sep">/</span> playwright
+      </span>
+    </div>
+    <div class="d-flex justify-content-md-start justify-content-end">
+      <span>
+        entrepreneur <span class="sep">/</span> developer
+        <span class="sep">/</span> author
       </span>
     </div>
     <div class="d-flex justify-content-md-start justify-content-end">
       <span class="border-bottom pb-2"
-        >game maker <span class="sep">/</span> entrepreneur
+        >maker <span class="sep">/</span> musician
         <span class="sep">/</span> coffee professional
-        <span class="sep">/</span></span
-      >
+      </span>
     </div>
 
     <div class="d-flex justify-content-md-start justify-content-end pt-2">
-      in Oakland, California
+      in Berkeley, California
     </div>
   </div>
 </template>

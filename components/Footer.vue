@@ -1,6 +1,6 @@
 <template>
   <div class="writingFont text-center">
-    Made with love (and Nuxt3) by me! ©2023
+    Made with love (and Nuxt3) by me! ©2024
     <br />
     <a class="link" href="https://twitter.com/_fosterdouglas" target="_blank"
       >twitter</a
@@ -20,7 +20,9 @@
     <a v-if="!emailShowing" class="link" @click="emailShowing = !emailShowing"
       >email</a
     >
-    <span v-else>foster@sandcastle.co</span>
+    <span v-else
+      ><a href="mailto:foster@sandcastle.co">foster@sandcastle.co</a></span
+    >
     /
     <a class="link" target="_blank" href="./files/foster-douglas-resume.pdf"
       >cv</a

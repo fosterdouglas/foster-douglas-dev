@@ -1,5 +1,41 @@
 <template>
   <div class="container-fluid">
+    <GroupTitle :title="'drama'" />
+
+    <div class="row px-4 py-4 mb-5">
+      <Project
+        :img="'project-svs.png'"
+        :name="'Silicon Valley Shakespeare'"
+        :link="'https://www.svshakespeare.org/2024'"
+        :target="'_blank'"
+        :description="'Creative staff for the upcoming 2024 summer season– sound design, tech, and production.'"
+      />
+
+      <Project
+        :img="'project-placeholder.png'"
+        :name="'Two People Talking'"
+        :description="'Short plays of... two people talking. Published once per week– website coming soon.'"
+      />
+
+      <Project
+        :img="'project-placeholder.png'"
+        :name="'Outskirts of Delusion'"
+        :description="'One act play about twins, delusion, and love in a sleepy town with a cursed \'heart-break\' bus stop. Coming soon.'"
+      />
+    </div>
+
+    <GroupTitle :title="'prose'" />
+
+    <div class="row px-4 py-4 mb-5">
+      <Project
+        :img="'project-placeholder.png'"
+        :name="'House in the Trees'"
+        :description="'Children\'s novel on the adventures of looking inward, allowing Love, and letting go – first draft finished in 2023.'"
+        :link="'http://house-in-the-trees.com'"
+        :target="'_blank'"
+      />
+    </div>
+
     <GroupTitle :title="'design'" />
 
     <div class="row px-4 py-4 mb-5">
@@ -26,44 +62,9 @@
       />
     </div>
 
-    <GroupTitle :title="'write'" />
-
-    <div class="row px-4 py-4 mb-5">
-      <Project
-        :img="'project-placeholder.png'"
-        :name="'House in the Trees'"
-        :description="'Children\'s novel on the adventures of looking inward, learning to Love, and letting go – written in 2023.'"
-        :link="'http://chameleon-and-turtle.com'"
-        :target="'_blank'"
-      />
-    </div>
-
     <GroupTitle :title="'play'" />
 
     <div class="row px-4 py-4 mb-5">
-      <!-- <Project
-        :img="'project-gamelife.png'"
-        :name="'Game/Life'"
-        :description="
-          'Recent game design thoughts, gameplay statistics, discussion, and other personal analysis on interactivity.'
-        "
-      />
-      <router-link
-        :to="{ name: 'indie-crusade' }"
-        v-slot="{ navigate, isActive, href }"
-        custom
-      >
-        <Project
-          :active="isActive"
-          @click.native="navigate"
-          :link="href"
-          :img="'project-placeholder.png'"
-          :name="'Indie Crusade'"
-          :description="
-            'Discourse on indie game design and what I think defines the term &quot;Indie.&quot; Micro reviews under 2 minutes each.'
-          "
-        />
-      </router-link> -->
       <Project
         :img="'project-biotopico.png'"
         :name="'Bíotopíco'"
@@ -95,7 +96,7 @@
         :name="'1000 Game Designs'"
         :link="'https://dailygamedesigns.com/'"
         :target="'_blank'"
-        :description="'34 consecutive months of daily game design thoughts and postings, throughout 2015 until 2017.'"
+        :description="'34 consecutive months of daily game design thoughts and postings, throughout 2015 to 2017.'"
       />
       <Project
         :img="'project-fuzz.png'"
@@ -133,8 +134,9 @@
         :name="'Enchantress'"
         :link="'https://vimeo.com/857298204'"
         :target="'_blank'"
-        :description="'Music, sound design, & foley – independent animation collaboration finished in August 2023.'"
+        :description="'Music, sound design, & foley – independent animation collaboration completed in August 2023.'"
       />
+
       <Project
         :img="'project-quarterclock.png'"
         :name="'Quarter Clock'"

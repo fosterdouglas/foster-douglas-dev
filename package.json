@@ -11,12 +11,13 @@
   },
   "devDependencies": {
     "@types/node": "^18",
-    "nuxt": "^3.4.3",
-    "gh-pages": "^5.0.0"
+    "gh-pages": "^5.0.0",
+    "nuxt": "^3.4.3"
   },
   "dependencies": {
     "bootstrap": "^5.2.3",
     "eslint": "^8.40.0",
+    "nuxi": "^3.10.0",
     "sass": "^1.62.1"
   }
 }

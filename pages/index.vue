@@ -103,6 +103,7 @@ h2 {
 h4 {
   margin-top: 2.5rem;
   margin-bottom: 0;
+  font-size: 1.4rem;
 }
 
 hr {
