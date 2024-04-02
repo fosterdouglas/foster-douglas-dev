@@ -20,7 +20,7 @@ useHead({
 </script>
 
 <style lang="scss">
-@import url("https://use.typekit.net/cde1iuc.css");
+@import url("https://use.typekit.net/kbf8rqj.css");
 
 .htmlClasses {
   background: #ebebeb;
