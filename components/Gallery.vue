@@ -1,36 +1,32 @@
 <template>
   <div class="container-fluid">
-    <GroupTitle :title="'drama'" />
+    <GroupTitle :title="'write'" />
 
     <div class="row px-4 py-4 mb-5">
       <Project
-        :img="'project-svs.png'"
-        :name="'Silicon Valley Shakespeare'"
-        :link="'https://www.svshakespeare.org/2024'"
+        :img="'project-dispatches.png'"
+        :name="'Dispatches'"
+        :description="'Writer and contributor to the upcoming periodical release.'"
+        :link="'https://dispatchesmag.com/'"
         :target="'_blank'"
-        :description="'Creative staff for the upcoming 2024 summer season– sound design, tech, and production.'"
       />
 
       <Project
         :img="'project-placeholder.png'"
         :name="'Two People Talking'"
-        :description="'Short plays of... two people talking. Published once per week– website coming soon.'"
+        :description="'Short plays of... two people talking. Published once per week.'"
       />
 
       <Project
         :img="'project-placeholder.png'"
         :name="'Outskirts of Delusion'"
-        :description="'One act play about twins, delusion, and love in a sleepy town with a cursed \'heart-break\' bus stop. Coming soon.'"
+        :description="'One-act play about delusion and love at a \'cursed\' bus stop—coming soon.'"
       />
-    </div>
 
-    <GroupTitle :title="'prose'" />
-
-    <div class="row px-4 py-4 mb-5">
       <Project
         :img="'project-placeholder.png'"
         :name="'House in the Trees'"
-        :description="'Children\'s novel on the adventures of looking inward, allowing Love, and letting go – first draft finished in 2023.'"
+        :description="'Children\'s novel on Love, forgiveness, and letting go—coming in 2024.'"
         :link="'http://house-in-the-trees.com'"
         :target="'_blank'"
       />
@@ -40,70 +36,33 @@
 
     <div class="row px-4 py-4 mb-5">
       <Project
+        :img="'project-svs.png'"
+        :name="'Silicon Valley Shakespeare'"
+        :link="'https://www.svshakespeare.org/2024'"
+        :target="'_blank'"
+        :description="'Creative staff for 2024 summer season—sound design, tech, and production.'"
+      />
+
+      <Project
         :img="'project-surgeroi.png'"
         :name="'SurgeROI'"
         :link="'https://surgeroi.io'"
         :target="'_blank'"
-        :description="'Co-founder and Design Director – product, UX design, software development, design, & branding.'"
+        :description="'Co-founder, Design Director—UX, product design, development, & brand.'"
       />
       <Project
         :img="'project-sandcastle.jpg'"
         :name="'Sandcastle Creative'"
         :link="'http://sandcastle.co'"
         :target="'_blank'"
-        :description="'Founder – freelance design since 2015; focused on branding, creativity, and community design services.'"
+        :description="'Founder, 2015—freelance designs, visual & community services.'"
       />
       <Project
         :img="'project-ebd.png'"
         :name="'E-By Design'"
         :link="'https://e-bydesign.ca'"
         :target="'_blank'"
-        :description="'Freelance collaboration – UI design, UX research, product design, and front end software development.'"
-      />
-    </div>
-
-    <GroupTitle :title="'play'" />
-
-    <div class="row px-4 py-4 mb-5">
-      <Project
-        :img="'project-biotopico.png'"
-        :name="'Bíotopíco'"
-        :link="'https://everydaylemonade.itch.io/biotopico'"
-        :target="'_blank'"
-        :description="'Mindfulness game, breathe & plant real trees – Silver award ($10k) for DeepWell Mental Health competition.'"
-      />
-      <Project
-        :img="'project-everyday.png'"
-        :name="'Everyday Lemonade'"
-        :link="'https://everydaylemonade.itch.io/'"
-        :target="'_blank'"
-      >
-        <template #visual>
-          <span
-            >Refreshingly tangy experiences – focused on tiny Playdate games.
-            <button
-              class="link border-0 bg-transparent p-0"
-              target="'_blank'"
-              href="https://twitter.com/Everyday_Lemons"
-            >
-              @Everyday_Lemons
-            </button>
-          </span>
-        </template>
-      </Project>
-      <Project
-        :img="'project-dgd.png'"
-        :name="'1000 Game Designs'"
-        :link="'https://dailygamedesigns.com/'"
-        :target="'_blank'"
-        :description="'34 consecutive months of daily game design thoughts and postings, throughout 2015 to 2017.'"
-      />
-      <Project
-        :img="'project-fuzz.png'"
-        :name="'Fuzz'"
-        :link="'https://everydaylemonade.itch.io/fuzz'"
-        :target="'_blank'"
-        :description="'Adventure into the life of a tiny Fuzz ball – first game project, made in  2014; remade for iOS in 2020.'"
+        :description="'Freelance—UI, UX research, product design, and software development.'"
       />
     </div>
 
@@ -115,14 +74,14 @@
         :name="'Cura Coffeehouse'"
         :link="'https://www.instagram.com/curacoffeehouse/'"
         :target="'_blank'"
-        :description="'Designed, built, and managed – first specialty coffee house in Green Bay, WI; operated from 2017 to 2020.'"
+        :description="'Designed, built & managed—first specialty coffee shop in Green Bay, WI.'"
       />
       <Project
         :img="'project-bacc.png'"
         :name="'Bay Area Coffee'"
         :link="'https://www.instagram.com/hellobacc/'"
         :target="'_blank'"
-        :description="'Board member, monthly event planning, community engagement, and design; active from 2018 to 2020.'"
+        :description="'Board member, event coordinator, community engagement & design.'"
       />
     </div>
 
@@ -130,11 +89,54 @@
 
     <div class="row px-4 py-4 mb-5">
       <Project
+        :img="'project-biotopico.png'"
+        :name="'Bíotopíco'"
+        :link="'https://everydaylemonade.itch.io/biotopico'"
+        :target="'_blank'"
+        :description="'Mindfulness game—Silver award ($10k) for Mental Health competition.'"
+      />
+      <Project
+        :img="'project-everyday.png'"
+        :name="'Everyday Lemonade'"
+        :link="'https://everydaylemonade.itch.io/'"
+        :target="'_blank'"
+      >
+        <template #visual>
+          <span
+            >Refreshingly tangy Playdate experiences.
+            <button
+              class="link border-0 bg-transparent p-0"
+              target="'_blank'"
+              href="https://twitter.com/Everyday_Lemons"
+            >
+              @Everyday_Lemons
+            </button>
+          </span>
+        </template>
+      </Project>
+
+      <Project
+        :img="'project-dgd.png'"
+        :name="'1000 Game Designs'"
+        :link="'https://dailygamedesigns.com/'"
+        :target="'_blank'"
+        :description="'34 months of daily game design thoughts, throughout 2015 to 2017.'"
+      />
+
+      <Project
         :img="'project-enchantress.png'"
         :name="'Enchantress'"
         :link="'https://vimeo.com/857298204'"
         :target="'_blank'"
-        :description="'Music, sound design, & foley – independent animation collaboration completed in August 2023.'"
+        :description="'Animation collaboration—music composition, sound design & foley.'"
+      />
+
+      <Project
+        :img="'project-fuzz.png'"
+        :name="'Fuzz'"
+        :link="'https://everydaylemonade.itch.io/fuzz'"
+        :target="'_blank'"
+        :description="'Adventure into the life of a tiny Fuzz—Flash game, remade for iOS in 2020.'"
       />
 
       <Project
@@ -142,7 +144,7 @@
         :name="'Quarter Clock'"
         :link="'https://github.com/fosterdouglas/quarter-clock'"
         :target="'_blank'"
-        :description="'First Maker project – unique redesign for a simple digital clock using custom Python code & a Raspberry Pi Pico.'"
+        :description="'Custom redesign for a simple digital clock using Raspberry Pi Pico.'"
       />
     </div>
 
