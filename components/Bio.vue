@@ -14,8 +14,8 @@
     </div>
     <div class="d-flex justify-content-md-start justify-content-end">
       <span class="border-bottom pb-2"
-        >maker <span class="sep">/</span> musician
-        <span class="sep">/</span> coffee professional
+        >maker <span class="sep">/</span> musician <span class="sep">/</span> UX
+        <span class="sep">/</span> coffee
       </span>
     </div>
 

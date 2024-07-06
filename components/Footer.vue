@@ -2,8 +2,8 @@
   <div class="writingFont text-center">
     Made with love (and Nuxt3) by me! ©2024
     <br />
-    <a class="link" href="https://twitter.com/_fosterdouglas" target="_blank"
-      >twitter</a
+    <a class="link" href="https://instagram.com/fosterdouglas_" target="_blank"
+      >instagram</a
     >
     /
     <a class="link" href="http://sandcastle.co" target="_blank"
@@ -25,7 +25,7 @@
     >
     /
     <a class="link" target="_blank" href="./files/foster-douglas-resume.pdf"
-      >cv</a
+      >resume</a
     >
   </div>
 </template>
