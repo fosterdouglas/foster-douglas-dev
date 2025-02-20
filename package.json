@@ -7,7 +7,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "deploy": "nuxt generate && echo foster-douglas.com > ./dist/CNAME && node deploy.ts"
+    "deploy": "nuxt generate && echo foster-douglas.com > ./CNAME && node deploy.ts"
   },
   "devDependencies": {
     "@types/node": "^18",
