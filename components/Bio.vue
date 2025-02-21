@@ -20,7 +20,7 @@
     </div>
 
     <div class="d-flex justify-content-md-start justify-content-end pt-2">
-      in Berkeley, California
+      in London & San Francisco 
     </div>
   </div>
 </template>
