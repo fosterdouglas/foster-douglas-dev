@@ -1,6 +1,6 @@
 <template>
   <div class="writingFont text-center">
-    Made with love (and Nuxt3) by me! ©2025
+    Custom site made with love (and Nuxt3) by me! ©2025
     <br />
     <a class="link" href="https://instagram.com/fosterdouglas_" target="_blank"
       >instagram</a

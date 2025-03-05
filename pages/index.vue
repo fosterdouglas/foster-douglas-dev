@@ -1,7 +1,7 @@
 <template>
   <main>
     <div id="app" class="container-fluid shadow-sm position-relative mb-5">
-      <div class="row mb-5 header g-0 justify-content-between">
+      <div class="row mb-5 pb-4 header g-0 justify-content-between">
         <div class="col-1" v-if="$route.name !== 'index'">
           <NuxtLink class="text-decoration-none" tag="div" :to="'/'">
             <span class="supportFont link large" v-html="'<'"></span>
@@ -82,7 +82,7 @@
 .writingFont {
   font-family: serenity, Helvetica, Arial, sans-serif;
   font-weight: 300;
-  font-size: 1.05rem;
+  font-size: 1.2rem;
 }
 
 h1 {

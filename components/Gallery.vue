@@ -6,7 +6,7 @@
       <Project
         :img="'project-surgeroi.png'"
         :name="'SurgeROI'"
-        :link="'https://surgeroi.io'"
+        :link="'https://surgeroi.site'"
         :target="'_blank'"
         :description="'Co-founder, design director—UX, product design, dev, and branding.'"
       />
@@ -26,37 +26,6 @@
       />
     </div>
 
-    <GroupTitle :title="'play'" />
-    <div class="row px-4 py-4 mb-5">
-      <Project
-        :img="'project-svs.png'"
-        :name="'SV Shakespeare'"
-        :link="'https://www.svshakespeare.org/2024'"
-        :target="'_blank'"
-        :description="'Sound designer, score composer, tech, production—outdoor 12-show run.'"
-      />
-
-      <Project
-        :img="'project-tales-of-ancient-vietnam.png'"
-        :name="'Tales of Ancient Vietnam'"
-        :description="'Production management, script work–world premiere children\'s play.'"
-      />
-
-      <Project
-        :img="'project-placeholder.png'"
-        :name="'Two People Talking'"
-        :description="'Writer–brief explorations of... two people talking. Published weekly.'"
-        :link="'https://two-people-talking.ghost.io'"
-        :target="'_blank'"
-      />
-
-      <Project
-        :img="'project-placeholder.png'"
-        :name="'Delusional'"
-        :description="'Writer–fantastical play on twins, the burden of family, and delusions of love.'"
-      />
-    </div>
-
     <GroupTitle :title="'produce'" />
     <div class="row px-4 py-4 mb-5">
       <Project
@@ -65,6 +34,27 @@
         :name="'Sex, Camp, Rock \'N Roll'"
         :target="'_blank'"
         :description="'Producer, designer, tech director–a fabulous international cabaret fantasy.'"
+      />
+
+      <Project
+        :img="'project-svs.png'"
+        :name="'SV Shakespeare'"
+        :link="'https://www.svshakespeare.org/2024'"
+        :target="'_blank'"
+        :description="'Sound designer, score composer, stage manager, tech, and production.'"
+      />
+
+      <Project
+        :img="'project-death-becomes-us.png'"
+        :link="'https://www.hannahwhittingham.com/death-becomes-us'"
+        :name="'Death Becomes Us'"
+        :description="'Production support, tech support.'"
+      />
+
+      <Project
+        :img="'project-tales-of-ancient-vietnam.png'"
+        :name="'Tales of Ancient Vietnam'"
+        :description="'Production, script editor, design–world premiere children\'s play.'"
       />
 
       <Project
@@ -81,21 +71,29 @@
       <Project
         :img="'project-dispatches.png'"
         :name="'Dispatches'"
-        :description="'Writer and contributor–upcoming periodical 2024 magazine release.'"
+        :description="'Writer and contributor for content in 2025; web designer and developer.'"
         :link="'https://dispatchesmag.com/'"
         :target="'_blank'"
       />
 
       <Project
-        :img="'project-placeholder.png'"
+        :img="'project-house-in-the-trees.png'"
         :name="'House in the Trees'"
         :description="'Writer–children\'s novel on love, forgiveness, and letting go. 2024.'"
         :link="'http://house-in-the-trees.com'"
         :target="'_blank'"
       />
+
+      <Project
+        :img="'project-delusional.png'"
+        :link="'./files/delusional-draft03.pdf'"
+        :target="'_blank'"
+        :name="'Delusional'"
+        :description="'Playwright–fantastical play on twins, burdens of family, & delusions of love.'"
+      />
     </div>
 
-    <GroupTitle :title="'give'" />
+    <GroupTitle :title="'sip'" />
     <div class="row px-4 py-4 mb-5">
       <Project
         :img="'project-cura.png'"
@@ -104,6 +102,15 @@
         :target="'_blank'"
         :description="'Designer, builder, GM—first specialty coffee shop in Green Bay, WI.'"
       />
+
+      <Project
+        :img="'project-cafen.png'"
+        :name="'cafēn.'"
+        :link="'https://www.instagram.com/cafenspecialitycoffee/'"
+        :target="'_blank'"
+        :description="'Lead designer for brand, packaging, logo, colour, and print materials.'"
+      />
+
       <Project
         :img="'project-bacc.png'"
         :name="'Bay Area Coffee'"
@@ -157,10 +164,26 @@
         :target="'_blank'"
         :description="'Animation collaboration—music composition, sound design & foley.'"
       />
+
+      <Project
+        :img="'project-quarterclock.png'"
+        :name="'Quarter Clock'"
+        :link="'https://github.com/fosterdouglas/quarter-clock'"
+        :target="'_blank'"
+        :description="'Custom redesign concept for a simple digital clock using Raspberry Pi Pico.'"
+      />
+
+      <Project
+        :img="'project-two-people-talking.png'"
+        :name="'Two People Talking'"
+        :description="'Brief written explorations of... two people talking. Publishing in 2025.'"
+        :link="'https://two-people-talking.ghost.io'"
+        :target="'_blank'"
+      />
     </div>
 
     <GroupTitle
-      :title="'...'"
+      :title="'...ETC'"
       :color="archiveShowing ? 'dark' : 'secondary'"
       type="button"
       @click="archiveShowing = !archiveShowing"
@@ -173,14 +196,6 @@
         :link="'https://everydaylemonade.itch.io/fuzz'"
         :target="'_blank'"
         :description="'Adventure into the life of a tiny Fuzz—Flash game, remade for iOS in 2020.'"
-      />
-
-      <Project
-        :img="'project-quarterclock.png'"
-        :name="'Quarter Clock'"
-        :link="'https://github.com/fosterdouglas/quarter-clock'"
-        :target="'_blank'"
-        :description="'Custom redesign for a simple digital clock using Raspberry Pi Pico.'"
       />
 
       <Project

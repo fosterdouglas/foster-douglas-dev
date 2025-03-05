@@ -1,10 +1,10 @@
 <template>
-  <div class="col-12 col-sm-6 col-xl-4 my-3 p-2 user-select-none">
+  <div class="col-12 col-sm-6 col-lg-4 col-xl-4 my-3 p-2 user-select-none">
     <a :href="link" :target="target" class="text-decoration-none projectAnchor">
       <img
         v-if="img"
         :src="`./images/` + img"
-        class="p-3 me-auto projectCard"
+        class="p-2 me-auto projectCard"
         style="display: grid; height: 10rem; width: 10rem"
       />
 

@@ -14,6 +14,10 @@
 </script>
 
 <style scoped lang="scss">
+.nameText {
+  transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
 .name:hover {
   .nameText {
     background-size: 200%;
@@ -23,6 +27,7 @@
     -webkit-text-fill-color: transparent;
     cursor: pointer;
     font-family: rig-solid-bold-reverse, sans-serif;
+    transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
   }
 }
 </style>

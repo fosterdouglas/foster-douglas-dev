@@ -5,6 +5,8 @@ export default defineNuxtConfig({
     shim: false,
     strict: false,
   },
+
   css: ["~/assets/styles/entry.scss"],
   ssr: false,
+  compatibilityDate: "2025-02-21",
 });

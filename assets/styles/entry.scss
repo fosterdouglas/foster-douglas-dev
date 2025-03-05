@@ -1,5 +1,5 @@
 // This is not yet ideal, but fixes for now not needing to import the Bootstrap script in app.vue
-@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap/scss/bootstrap";
 
 // Functions (to manipulate colors, SVGs, calc, etc)
 // @import "../node_modules/bootstrap/scss/functions";
@@ -9,7 +9,7 @@
 
 // Required Bootstrap stylesheets
 // @import "../node_modules/bootstrap/scss/variables";
-@import "../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/functions";
 
 // Custom colors
 // @import "~/assets/styles/colors.scss";
@@ -61,10 +61,10 @@ $utilities-bg-colors: map-loop($utilities-bg, rgba-css-var, "$key", "bg");
 }
 
 // Remaining required parts
-@import "../node_modules/bootstrap/scss/maps";
-@import "../node_modules/bootstrap/scss/mixins";
-@import "../node_modules/bootstrap/scss/utilities";
-@import "../node_modules/bootstrap/scss/root";
+@import "../../node_modules/bootstrap/scss/maps";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/utilities";
+@import "../../node_modules/bootstrap/scss/root";
 
 // Global styles
 // @import "~/assets/styles/global.scss";
